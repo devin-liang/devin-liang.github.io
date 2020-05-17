@@ -1,0 +1,61 @@
+h1 {
+    font-family:'Arial Black';
+    border:5px solid black;
+    background-color: white;
+    font-size:300%;
+    text-align:center;
+    padding:30px;
+}
+h2 {
+    font-family:monospace;
+    text-align:center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.row {
+    display: flex;
+}
+
+p.description{
+    font-family:Arial;
+    text-align:center;
+    border: 2px solid black;
+}
+
+devo {
+   margin: 30px;
+}
+
+
+a:link, a:visited {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: white;
+    color: black;
+}
+
+
+div.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-image: url('background.jpg');
+}
+
+
