@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-
-<html, lang="en-US">
+<html>
     <head>
-        <title> About Page </title>
-        <link rel="stylesheet" href="styles.css"/>
+        <title> Devin's Personal Website </title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="utf-8"/>
+        <meta name ="author" content="Devin Liang"/>
+        <meta name="description" content="Devin's Personal Website"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     </head>
+    <body>
+        <header>
+            <h1 class="title"> Devin Liang </h1>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img class="menu" id="menu" src="images/ham.svg" alt="Mobile Menu Button">
+                </a>
+                <ul class="hide-mobile show-desktop" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu button">
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="https://github.com/devin-liang">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/devin-liang-a41a81170/">Linkedin</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="photos-container">
+            <div class="photo-description">
+                <h3> Band Camp 2017 </h3> 
+            </div>
 
-    <body style="background-color:white">
+            <div class="photo-description">
+                <h3> High School Graduation </h3> 
+            </div>
 
-        <p>
-            Test
-        </p>
+            <div class="photo-description">
+                <h3> 2017 Trip to China </h3> 
+            </div>
+            
+            <img class="slideshow" src="images/devo-band.jpg" alt="pic1">
+            <img class="slideshow" src="images/devo-pog.jpg" alt="pic2">
+            <img class="slideshow" src="images/devo-china.jpg" alt="pic3">
+
+            <button class="left slide-btn" onclick="plusDivs(-1)">&#8249;</button>
+            <button class="right slide-btn" onclick="plusDivs(1)">&#8250;</button>
+
+        </div>
+
+        <div class="container">
+            Hey! My name is Devin, a junior studying computer science and engineering at the University of Michigan.
+        </div>
+        <script src="essential.js"></script>
+        <script src="slideshow.js"></script>
     </body>
-</html,>
+</html>

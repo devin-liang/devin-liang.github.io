@@ -1,61 +1,369 @@
-h1 {
-    font-family:'Arial Black';
-    border:5px solid black;
-    background-color: white;
-    font-size:300%;
-    text-align:center;
-    padding:30px;
-}
-h2 {
-    font-family:monospace;
-    text-align:center;
-}
+/*
+Colors:
+#112D32 Dark Blue
+#88BDBC Light Blue
+#254E58 Blue
+#4F4A41 Dark Gray
+#6E6658 Light Gray
 
-img{
-    max-width: 100%;
-    height: auto;
-}
+#0B0C10 Black
+#1F2833 Lighter Black
+#C5C6C7 Gray
+#66FCF1 Bright Blue
+#45A29E Darker Blue
 
+*/
 
-.row {
-    display: flex;
+.hide-mobile{
+    display: none;
 }
 
-p.description{
-    font-family:Arial;
-    text-align:center;
-    border: 2px solid black;
-}
-
-devo {
-   margin: 30px;
-}
-
-
-a:link, a:visited {
-    color: white;
-    background-color: black;
-    border: 2px solid black;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-a:hover, a:active {
-    background-color: white;
-    color: black;
-}
-
-
-div.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+* {
+    box-sizing: border-box;
 }
 
 body{
-    background-image: url('background.jpg');
+    background: url('images/mountain.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Montserrat;
+    margin: 0;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0B0C10;
+    margin-bottom: 3em;
+}
+
+.title{
+    margin-left: 0.2em;
+    margin-top: 0.2em;
+    color: #66FCF1;
+    text-decoration: none;
+}
+
+.menu{
+    width: 45px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.container{
+    color: white;
+    background-color:#1F2833;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+    padding: 1em;
+}
+
+.flex-container{
+    background-color: #0B0C10;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.quote-container{
+    position: absolute;
+    max-width: 100%;
+}
+
+.quote{
+    float: left;
+    max-width: 100%;
+    font-size: 2.5em;
+    color: #66FCF1;
+    font-family: 'Kaushan Script', cursive;
+}
+
+blockquote{
+    margin: 0;
+}
+
+.devo{
+    max-width: 70%;
+    min-width: 550px;
+    min-height: 400px;
+    float: right;
+    margin-right: -15em;
+}
+
+/* Nav Bar */
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    background: #1F2833;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 5;
+    height: 100%;
+    width: 60%;
+    padding-top: 3em;
+}
+
+nav ul li a{
+    display: block;
+    color:#66FCF1;
+    text-decoration: none;
+    padding: 1.2em;
+    margin-right: 0.8em;
+}
+
+nav ul li a:hover{
+    color: #45A29E;
+}
+
+/* Mobile Exit Button */
+.exit-btn{
+    margin-top: -1.6em;
+    margin-bottom: 1em;
+    text-align: right;
+    padding-right: 1.2em;
+    filter: invert(100%);
+}
+
+.exit-btn img{
+    cursor: pointer;
+    width: 1.5em;
+}
+
+@media only screen and (min-width: 550px){
+    .quote{
+        font-size: 2.7em;
+    }
+}
+
+@media only screen and (min-width: 620px){
+    .quote{
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    .quote{
+        font-size: 2.8em;
+    }
+    .devo{
+        margin-right: -12em;
+    }
+}
+
+
+/* For desktop */
+@media only screen and (min-width: 1024px){
+    .show-desktop{
+        display: block;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul{
+        position: inherit;
+        background: none;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    nav ul li a{
+        background: inherit;
+    }
+
+    nav ul li a:hover{
+        color: #6E6658;
+    }
+
+    .flex-container{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 1em;
+    }
+
+    .container{
+        width: 80%;
+        border-radius: 1em;
+    }
+
+    .quote{
+        font-size: 2.8em;
+    }
+
+    .devo{
+        margin-right: -10em;
+    }
+}
+
+/* About Page */
+
+.photos-container{
+    text-align: center;
+    border-radius: 1em;
+    display: block;
+    background-color: #1F2833;
+    max-width: 80%;
+    margin: auto;
+    height: 400px;
+}
+
+.slideshow{
+    display: none;
+    margin: auto;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.slide-btn{
+    top: 4em;
+    font-size: 4em;
+    padding: 10px;
+    background-color: #1F2833;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+}
+
+.slide-btn:active{
+    outline: none;
+    border: none;
+}
+
+.slide-btn:hover{
+    background-color: #0B0C10;
+}
+
+.left{
+    position: absolute;
+    left: 0.5em;
+}
+
+.right{
+    position: absolute;
+    right: 0.5em;
+}
+
+.photo-description{
+    display: none;
+    position: absolute;
+    background-color: #C5C6C7;
+    padding: 0.5em;
+}
+
+
+/* Experimental Game */
+
+.computer-container{
+    background-color: #1F2833;
+    text-align: center;
+    margin: 2em;
+    height: 100px;
+}
+
+.computer-text{
+    display: inline-block;
+    color: white;
+    line-height: normal;
+}
+
+.player-container{
+    background-color: #1F2833;
+    text-align: center;
+    margin: 2em;
+}
+
+
+.button-style-comp{
+    text-decoration: none;
+    padding: 2em;
+    color: #45A29E;
+    background-color: #1F2833;
+    display: inline-block;
+    margin: 0 2em 0;
+}
+
+.button-style{
+    text-decoration: none;
+    padding: 2em;
+    color: white;
+    background-color: #1F2833;
+    display: inline-block;
+    margin: 0 2em 0;
+}
+
+.player-container .button-style:hover{
+    background-color: #0B0C10;
+}
+
+.textbox{
+    text-align: center;
+}
+
+.game-text{
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hide{
+    display: none;
+}
+
+.selected{
+    background-color: #0B0C10;
+}
+
+.reset-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1F2833;
+    color: white;
+    padding: .5em;
+    margin: .5em;
+}
+
+.reset-btn:hover{
+    background-color: #0B0C10;
+}
+
+@media only screen and (min-width: 1300px){
+    .quote{
+        font-size: 3.5em;
+    }
+
+    .left{
+        position: absolute;
+        left: 1.2em;
+    }
+
+    .right{
+        position: absolute;
+        right: 1.2em;
+    }
+}
+
+
+
+
+
+
 
 
