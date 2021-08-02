@@ -1,60 +1,56 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Devin's Personal Website </title>
-        <link rel="stylesheet" href="styles.css" />
-        <meta charset="utf-8"/>
-        <meta name ="author" content="Devin Liang"/>
-        <meta name="description" content="Devin's Personal Website"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    </head>
-    <body>
-        <header>
-            <h1 class="title"> Devin Liang </h1>
-            <nav>
-                <a href="#" class="hide-desktop">
-                    <img class="menu" id="menu" src="images/ham.svg" alt="Mobile Menu Button">
-                </a>
-                <ul class="hide-mobile show-desktop" id="nav">
-                    <li id="exit" class="exit-btn hide-desktop">
-                        <img src="images/exit.svg" alt="exit menu button">
-                    </li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="game.html">Game</a></li>
-                    <li><a href="https://github.com/devin-liang">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/devin-liang-a41a81170/">Linkedin</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="photos-container">
-            <div class="photo-description">
-                <h3> Band Camp 2017 </h3> 
-            </div>
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <div class="photo-description">
-                <h3> High School Graduation </h3> 
-            </div>
+    <title>Devin Liang</title>
 
-            <div class="photo-description">
-                <h3> 2017 Trip to China </h3> 
-            </div>
-            
-            <img class="slideshow" src="images/devo-band.jpg" alt="pic1">
-            <img class="slideshow" src="images/devo-pog.jpg" alt="pic2">
-            <img class="slideshow" src="images/devo-china.jpg" alt="pic3">
+    <!-- Bootstrap style sheet from CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-            <button class="left slide-btn" onclick="plusDivs(-1)">&#8249;</button>
-            <button class="right slide-btn" onclick="plusDivs(1)">&#8250;</button>
+    <!-- Personal style sheet-->
+    <link rel="stylesheet" href="css/style.css">
 
-        </div>
+  </head>
+  <body>
+    <header>
 
-        <div class="container">
-            Hey! My name is Devin, a junior studying computer science and engineering at the University of Michigan.
-        </div>
-        <script src="essential.js"></script>
-        <script src="slideshow.js"></script>
-    </body>
+    </header>
+    <h1 class="display-4 text-center my-3 mx-3">coolanimememes.com</h1>
+    
+
+    <!-- Collapse at small breakpoint and below just for testing -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mx-sm-3 rounded">
+
+      <!--  Brand -->
+      <a href="index.html" class="navbar-brand ms-3"> Devin Liang </a>
+
+      <!-- Toggle collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- Screen Reader only class doesn't work? -->
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="about.html" class="nav-link">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

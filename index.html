@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,70 +6,81 @@
 
     <title>Devin Liang</title>
 
+    <!-- Bootstrap style sheet from CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!-- Personal style sheet-->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
   </head>
   <body>
     <header>
 
     </header>
-    <h1>coolanimememes.com</h1>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-4">
-          one
-        </div>
-        <div class="col-4">
-          two
-        </div>
+    <h1 class="display-4 text-center my-3 mx-3">coolanimememes.com</h1>
+    
+
+    <!-- Collapse at small breakpoint and below just for testing -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mx-sm-3 rounded">
+
+      <!--  Brand -->
+      <a href="index.html" class="navbar-brand ms-3"> Devin Liang </a>
+
+      <!-- Toggle collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <!-- Screen Reader only class doesn't work? -->
+            <a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+        </ul>
       </div>
+    </nav>
+
+    <div class="jumbotron m-4 ">
+      <h1 class="display-4"> Hi </h1>
+      <p class="lead"> This is some text</p>
+      <hr class="my-4">
+      <p>This is some more text, isn't it cool?</p>
+      <a href="#" role="button" class="btn btn-primary btn-lg">Learn More</a>
     </div>
 
+    <!-- Quick Links -->
     <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-4">
-          One of two columns
+      <h2 class="display-6 text-center">Quick Links</h2>
+      <div class="row">
+  
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">About</h5>
+              <p class="card-text">Learn a bit more about who I am</p>
+              <a href="#" class="btn btn-primary btn-sm">Click here</a>
+            </div>
+          </div>
         </div>
-        <div class="col-4">
-          One of two columns
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-4">
-          One of two columns
-        </div>
-        <div class="col-4">
-          One of two columns
-        </div>
-      </div>
-      <div class="row justify-content-end">
-        <div class="col-4">
-          One of two columns
-        </div>
-        <div class="col-4">
-          One of two columns
-        </div>
-      </div>
-      <div class="row justify-content-around">
-        <div class="col-4">
-          One of two columns
-        </div>
-        <div class="col-4">
-          One of two columns
+        
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Projects</h5>
+              <p class="card-text">Check out some of the projects I've worked on</p>
+              <a href="#" class="btn btn-primary btn-sm">Click here</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-between">
-        <div class="col-4">
-          One of two columns
-        </div>
-        <div class="col-4">
-          One of two columns
-        </div>
-      </div>
+      
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
