@@ -17,11 +17,9 @@
     <header>
 
     </header>
-    <h1 class="display-4 text-center my-3 mx-3">Devin Liang</h1>
-    
 
     <!-- Collapse at small breakpoint and below just for testing -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mx-sm-3 rounded">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mx-sm-3 rounded mt-3">
 
       <!-- Toggle collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,8 +44,148 @@
         </ul>
       </div>
     </nav>
+    <!-- Header -->
+    <div class="m-4 text-center">
+        <h4 class="display-4"> Devin Liang </h4>
+        <p>616-634-1339 | devliang@umich.edu</p>
+    </div>
+    <!-- List group with tabs -->
+    <div class="row m-4">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-education-list" data-toggle="list" href="#list-education" role="tab" aria-controls="education">Education</a>
+            <a class="list-group-item list-group-item-action" id="list-projects-list" data-toggle="list" href="#list-projects" role="tab" aria-controls="projects">Projects</a>
+            <a class="list-group-item list-group-item-action" id="list-activities-list" data-toggle="list" href="#list-activities" role="tab" aria-controls="activities">Leadership & Activities</a>
+            <a class="list-group-item list-group-item-action" id="list-skills-list" data-toggle="list" href="#list-skills" role="tab" aria-controls="skills">Skills</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-education" role="tabpanel" aria-labelledby="list-education-list">
+                <p>University of Michigan</p>
+                <ul>
+                    <li>Bachelor of Science in Computer Science and Engineering</li>
+                    <li>Expected Graduation Date April 2022</li>
+                    <li>GPA: 3.6/4.0</li>
+                    <li>Relevant Coursework:
+                        <ul>
+                            <li>EECS 481: Software Engineering</li>
+                            <li>EECS 482: Introduction to Operating Systems</li>
+                            <li>EECS 281: Data Structures and Algorithms</li>
+                            <li>EECS 485: Web Systems</li>
+                            <li>EECS 484: Database Management Systems</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="list-projects" role="tabpanel" aria-labelledby="list-projects-list">
+                <p>
+                    Thread Library
+                    <br>
+                    EECS 482 - Operating Systems
+                </p>
+                <ul>
+                    <li>Created a thread library in C++ which implemented threads, mutexes, and condition
+                        variables in a group of three students.
+                    </li>
+                    <li>
+                        Learned to test concurrent programs and overcome bugs associated with them like deadlocks.
+                    </li>
+                </ul>
+                <p>
+                    Instagram Clone
+                    <br>
+                    EECS 485 - Web Systems
+                </p>
+                <ul>
+                    <li>Created a basic clone of the Instagram website with one other students which allowed
+                        users to create accounts, make posts, and follow other users, along with other basic
+                        functionality
+                    </li>
+                    <li>Utilized Python and Flask for server-side features and JavaScript with React
+                        for client side.
+                    </li>
+                    <li>
+                        Applied tools like shell scripting and Pytest to automate tasks like testing and 
+                        starting a local server.
+                    </li>
+                </ul>
+                <p>
+                    ZeroHero
+                    <br>
+                    MHacks 12 Hackathon
+                </p>
+                <ul>
+                    <li>Developed a React Native app with three other students that utlized Google AutoML Vision
+                        to identify food items within an image to recommend recipes to the user based on the ingredients.
+                    </li>
+                    <li>Wrote API calls to a food API using Python to retrieve information for each ingredient found in the image.
+                    </li>
+                    <li>
+                        Quickly gained a basic understanding of new languages and frameworks like Python and React Native
+                        to contribute to the project.
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="list-activities" role="tabpanel" aria-labelledby="list-activities-list">
+                <p>
+                    Intro to Engineering Peer Mentor
+                </p>
+                <ul>
+                    <li>Guided a first-year student team through the process of creating two bioengineering projects.</li>
+                    <li>Learned to take on a supportive leadership role and how to communicate as a mentor</li>
+                </ul>
+                <p>
+                    Michigan Hackers
+                </p>
+                <ul>
+                    <li>Worked on a Java Android app with the Michigan Hackers computer science student organization.</li>
+                    <li>Implemented the camera portion of the app to control the camera and send pictures to a database.</li>
+                    <li>Gained experience in working and communicating with a larger team of twenty students.</li>
+                </ul>
+                <p>
+                    Student Ambassador
+                </p>
+                <ul>
+                    <li>Created connections between prospective students and the University of Michigan by hosting
+                        students and giving tours by working with the Office of Undergraduate Admissions.
+                    </li>
+                </ul>
+                <p>
+                    Marching Band Instructor
+                </p>
+                <ul>
+                    <li>Taught music and marching for the flute section during high school band camps at Olivet College.</li>
+                    <li>Learned to work with younger students and resolve any personal problems while away from home. </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="list-skills" role="tabpanel" aria-labelledby="list-skills-list">
+                <p>
+                    Programming Languages
+                </p>
+                <ul>
+                    <li>C/C++ (Proficient)</li>
+                    <li>Python (Competent)</li>
+                    <li>SQL (Prior Exposure)</li>
+                    <li>HTML/CSS (Prior Exposure)</li>
+                    <li>JavaScript (Prior Exposure)</li>
+                </ul>
+                <p>
+                    Software and Tools
+                </p>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Linux</li>
+                    <li>Windows 10</li>
+                    <li>Git</li>
+                    <li>Bash</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Accordion  style to make resume more interesting -->
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

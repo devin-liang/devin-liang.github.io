@@ -17,11 +17,10 @@
     <header>
 
     </header>
-    <h1 class="display-4 text-center my-3 mx-3">Devin Liang</h1>
     
 
     <!-- Collapse at small breakpoint and below just for testing -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mx-sm-3 rounded">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mx-sm-3 rounded mt-3">
 
       <!-- Toggle collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,6 +86,67 @@
     </div>
 
     <!-- Dropdown -->
+    <div class="accordion" id="hobbiesDropdown">
+      <div class="card">
+        <div class="card-header" id="gameHeader">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseGames" aria-expanded="false" aria-controls="collapseGames">
+              Favorite Video Games
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseGames" class="collapse" aria-labelledby="gameHeader" data-parent="#hobbiesDropdown">
+          <div class="card-body">
+            <p>
+              Video games have been a passion of mine for as long as I can remember. I especially
+              enjoy action, adventure, and RPG games. I grew up mostly on Nintendo and got a PlayStation
+              4 while in high school. Coming into college, I got into PC games. 
+              I'm currently taking a class in game design this semester.
+    
+            <hr>
+            <h6>Top Games</h6>
+              <ul>
+                <li>Ghost of Tsushima</li>
+                <li>The Legend of Zelda: Skyward Sword</li>
+                <li>Yakuza 0</li>
+                <li>Persona 5</li>
+                <li>Pokemon HeartGold / SoulSilver</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="animeHeader">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="false" aria-controls="collapseAnime">
+              Favorite Anime
+            </button>
+          </h5>
+        </div>
+        <div id="collapseAnime" class="collapse" aria-labelledby="headingTwo" data-parent="#hobbiesDropdown">
+          <div class="card-body">
+            <p>
+              I got into watching anime sometime during high school and fell in love with it. 
+              The way anime can tell a meaningful and heartfelt story in just a handful of episodes
+              is what hooked me in. Anime can sometimes have a bad stigma since it's different,
+              but I would recommend you try it out since there are so many great stories in
+              world of anime
+              <h6> Top Anime </h6>
+              <ul>
+                <li>Your Lie in April</li>
+                <li>Clannad: After Story</li>
+                <li>Steins;Gate</li>
+                <li>Grand Blue</li>
+                <li>Code Geass</li>
+                <li>Gurren Lagann</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
