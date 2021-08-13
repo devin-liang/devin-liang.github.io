@@ -1,5 +1,10 @@
-@import url(./fonts.css);
-
-body {
-    font-family: "Montserrat";
+.home-image {
+    background-image: url('../IMG_7390-min.jpg');
+    background-size: cover;
+    background-position: center top;
 }
+
+.social-button {
+    max-width: 3rem;
+}
+
