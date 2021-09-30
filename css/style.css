@@ -5,6 +5,11 @@
 }
 
 .social-button {
-    max-width: 3rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.social-button:hover{
+    opacity: 70%;
 }
 
