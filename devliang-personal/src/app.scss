@@ -1,3 +1,4 @@
+@import "normalize.css";
 .app {
     height: 100vh;
 
@@ -7,6 +8,7 @@
         background-color: lightsalmon;
         position: relative;
         top: 70px;
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none; // firefox
         &::-webkit-scrollbar{ // all others
