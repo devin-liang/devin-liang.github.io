@@ -10,7 +10,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            genius.
+            no cap.
           </a>
           <div className="item-container">
             <PersonIcon className="icon" />
