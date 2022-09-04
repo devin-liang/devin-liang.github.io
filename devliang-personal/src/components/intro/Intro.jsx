@@ -11,15 +11,14 @@ export default function Intro() {
       init(textRef.current, {
          backDelay: 1500,
          showCursor: true,
-         strings: ["Engineer", "Developer"],
+         strings: ["Hey, I'm Devin"],
       });
    }, []);
 
    return (
       <div className='intro' id='intro'>
          <div className="wrapper">
-            <h1>Hey I'm Devin</h1>
-            <h1>Software <span ref={textRef}></span></h1>
+            <h1><span ref={textRef}></span></h1>
             <a href="#projects">
                <div className='icon-container'>
                   <ExpandMoreIcon className='arrow-icon'/>

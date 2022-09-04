@@ -10,15 +10,15 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            no cap.
+            devin liang.
           </a>
           <div className="item-container">
             <PersonIcon className="icon" />
-            <span>+44 924 12 74</span>
+            <span>616-634-1339</span>
           </div>
           <div className="item-container">
             <MailIcon className="icon" />
-            <span>dev@dev.com</span>
+            <span>devliang@umich.edu</span>
           </div>
         </div>
         <div className="right">
