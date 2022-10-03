@@ -1,0 +1,18 @@
+.about {
+    background-color: #8d899d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        background-color: white;
+        width: 70%;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px -8px black;
+
+        .header {
+            text-align: center;
+        }
+    }
+}
