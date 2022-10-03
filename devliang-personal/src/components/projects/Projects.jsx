@@ -17,7 +17,7 @@ const data = [
   {
     id: 2,
     title: 'Hydroman',
-    description: 'Solo game project',
+    description: 'Solo game project created in two weeks',
     links: [
       {
         link: 'link',
@@ -28,10 +28,10 @@ const data = [
   {
     id: 3,
     title: 'Illuminate',
-    description: '2D Puzzle Platformer',
+    description: '2D Puzzle Platformer created in a team of five students. Winner of the Fall 2017 UMich + EMU Game Showcase',
     links: [
       {
-        link: 'link',
+        link: 'https://built-different-studios.itch.io/illuminate',
         link_text: 'Check it out on Itch.io',
       }
     ]

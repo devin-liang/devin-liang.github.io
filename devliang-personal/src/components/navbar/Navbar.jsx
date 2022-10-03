@@ -1,9 +1,10 @@
 import React from 'react'
 import "./navbar.scss"
-import PersonIcon from '@mui/icons-material/Person';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Email';
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
     // if menuOpen prop is true, add the active class, false by default
     <div className={"navbar " + (menuOpen && "active")}>
@@ -13,8 +14,16 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             devin liang.
           </a>
           <div className="item-container">
-            <PersonIcon className="icon" />
-            <span>616-634-1339</span>
+            <a href="https://github.com/devin-liang" target="_blank">
+              <GitHubIcon className="icon" />
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div className="item-container">
+            <a href="https://www.linkedin.com/in/devliang/" target="_blank">
+              <LinkedInIcon className="icon" />
+              <span>LinkedIn</span>
+            </a>
           </div>
           <div className="item-container">
             <MailIcon className="icon" />

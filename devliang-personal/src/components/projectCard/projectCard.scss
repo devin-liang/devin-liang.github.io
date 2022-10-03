@@ -14,11 +14,15 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 20px;
+    background-color: white;
 
     .top {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: large;
+        text-align: center;
+        height: 20%;
     }
 
     .middle {
@@ -27,23 +31,24 @@
         align-items: center;
         padding: 10px;
         border-radius: 10px;
-        background-color: #ecd2e3;
+        height:50%;
     }
 
     .bottom {
         display: flex;
         justify-content: center;
         align-items: center;
+        height:30%;
 
         a {
             text-decoration: none;
-            background-color: #ecd2e3;
+            background-color: #dccccf;
             border-radius: 10px;
             padding: 10px;
             color: inherit;
 
             &:hover {
-                background-color: #ed94ce;
+                background-color: #9d9194;
             }
         }
     }

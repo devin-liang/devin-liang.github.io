@@ -10,14 +10,16 @@ class ProjectCard extends React.Component {
               <div className="top">
                 <h3>{this.props.title}</h3>
               </div>
+              <hr/>
               <div className="middle">
                 <p>
                   {this.props.description}
                 </p>
               </div>
+              <hr/>
               <div className="bottom">
                 {this.props.links.map((item) => (
-                  <a href={item.link}>{item.link_text}</a>
+                  <a href={item.link} target="_blank">{item.link_text}</a>
                 ))}
             </div>
           </div>
