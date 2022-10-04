@@ -32,7 +32,7 @@ const data = [
   {
     id: 3,
     title: 'Illuminate',
-    description: '2D Puzzle Platformer created in a team of five students. Winner of the Fall 2017 UMich + EMU Game Showcase',
+    description: '2D Puzzle Platformer created in a team of five students. Winner of the Fall 2021 UMich + EMU Game Showcase',
     links: [
       {
         link: 'https://built-different-studios.itch.io/illuminate',
