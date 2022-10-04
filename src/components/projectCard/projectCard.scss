@@ -38,6 +38,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         height:30%;
 
         a {
@@ -46,7 +47,7 @@
             border-radius: 10px;
             padding: 10px;
             color: inherit;
-
+            margin-bottom: 5px;
             &:hover {
                 background-color: #9d9194;
             }

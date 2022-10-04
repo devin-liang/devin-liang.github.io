@@ -9,7 +9,7 @@ const data = [
     description: 'Recreation of the Legend of Zelda for NES using Unity',
     links: [
       {
-        link: 'link',
+        link: 'ZeldaRemakeWeb/index.html',
         link_text: 'Try it out!'
       }
     ]
@@ -20,8 +20,12 @@ const data = [
     description: 'Solo game project created in two weeks',
     links: [
       {
-        link: 'link',
-        link_text: 'Try it out!'
+        link: 'Hydroman(Windows).zip',
+        link_text: 'Download for Windows'
+      },
+      {
+        link: 'Hydroman(Mac).zip',
+        link_text: 'Download for Mac'
       }
     ]
   },
